@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'add_money' %}">My Wallet</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'wallet' %}">Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pay' %}">Pay</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signin' %}">Logout</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signin' %}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signup' %}">Register</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

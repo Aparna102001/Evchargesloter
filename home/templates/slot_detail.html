@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Slot Detail{% endblock %}
+
+{% block content %}
+  <h1>Slot Detail</h1>
+  <p>Date: {{ slot.date }}</p>
+  <p>Start time: {{ slot.start_time }}</p>
+  <p>End time: {{ slot.end_time }}</p>
+  {% if slot.available %}
+    <form method="post" action="{% url 'booking_confirmation' slot.id %}">
+      {% csrf_token %}
+      <input type="submit" value="Book">
+    </form>
+  {% else %}
+    <p>This slot is already booked.</p>
+  {% endif %}
+{% endblock %}

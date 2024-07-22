@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:rgb(98, 11, 197) ;">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <p><a href="#" class="link-underline-warning">EV CHARGING SLOT BOOKER</a></p>
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="{% url 'chargingslot' %}">CHARGING SLOT AVAILABILITY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="{% url 'signin' %}">USER REGISTRATION</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="{% url 'staffsignin' %}">STAFF PORTAL</a>
+        </li>
+        
+         
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> 
+<marquee style="color:yellow ;font-size:large">EV CHARGESLOT BOOKING...</marquee>
+<div>
+  <p  class="container" style="justify-content:center ;color:white ;font-size:larger;align-self: center; ">
+    <br>
+    <br>
+       
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp An electric vehicle charging station is equipment that connects an electric vehicle (EV) to a source of electricity to recharge electric cars, neighborhood electric vehicles and plug-in hybrids. Some charging stations have advanced features such as Smart metering, cellular capability and network connectivity, while others are more basic.
+
+Charging stations are also called electric vehicle supply equipment (EVSE) and are provided in municipal parking locations by electric utility companies or at retail shopping centers by private companies. These stations provide special connectors that conform to the variety of electric charging connector standards.
+  </p>
+</div>
+
+
+<div>
+    <img style="width: 1500px;height: 600px; ;" src="https://cdn.pixabay.com/photo/2017/09/08/09/02/electric-car-2728131_960_720.png" alt="">
+</div>
+<div>
+    <p class="container" style="color:white ;font-size:larger">
+      <br>
+      <br>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Our EV Chargeslotter mainly aims to book the charging location easily without any conjection.
+        todays busy life change .Electric Vehicle Charging Stations
+        Photo of an electric vehicle charging station.
+        Tens of thousands of electric vehicle (EV) charging stations are  now available in India. These charging stations are being installed in key areas throughout the country for public charging and workplace charging as a supplement to residential charging. Most EV owners do the majority of their charging at home.
+    </p>
+</div>
+    
+</body>
+</html>

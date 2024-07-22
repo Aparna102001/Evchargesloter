@@ -1,0 +1,14 @@
+<title>Enter your booking details</title>
+<div class="container">
+    
+    <form method="POST">
+      {% csrf_token %}
+      <fieldset>
+        <legend>Form</legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary" >Submit</button>
+      </fieldset>
+    </form>
+</div>
+ 
